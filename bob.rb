@@ -6,6 +6,8 @@ class Bob
 			return "Whoa, chill out!"
 		elsif stuff.end_with?('?')
 			return "Sure."
+    elsif stuff.chars.any? == false 
+      return "Fine. Be that way!"
 		else
 			return "Whatever."
 		end

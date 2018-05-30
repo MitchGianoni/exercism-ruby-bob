@@ -100,19 +100,19 @@ class BobTest < Minitest::Test
   end
 
   def test_prattling_on
-    skip
+    #skip
     remark = "Wait! Hang on. Are you going to be OK?"
     assert_equal "Sure.", Bob.hey(remark), %q{Bob hears "Wait! Hang on. Are you going to be OK?", and..}
   end
 
   def test_silence
-    skip
+    #skip
     remark = ""
     assert_equal "Fine. Be that way!", Bob.hey(remark), %q{Bob hears "", and..}
   end
 
   def test_prolonged_silence
-    skip
+    #skip
     remark = "          "
     assert_equal "Fine. Be that way!", Bob.hey(remark), %q{Bob hears "          ", and..}
   end
