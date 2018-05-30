@@ -10,91 +10,91 @@ class BobTest < Minitest::Test
   end
 
   def test_shouting
-    skip
+    # skip
     remark = "WATCH OUT!"
     assert_equal "Whoa, chill out!", Bob.hey(remark), %q{Bob hears "WATCH OUT!", and..}
   end
 
   def test_shouting_gibberish
-    skip
+    # skip
     remark = "FCECDFCAAB"
     assert_equal "Whoa, chill out!", Bob.hey(remark), %q{Bob hears "FCECDFCAAB", and..}
   end
 
   def test_asking_a_question
-    skip
+    # skip
     remark = "Does this cryogenic chamber make me look fat?"
     assert_equal "Sure.", Bob.hey(remark), %q{Bob hears "Does this cryogenic chamber make me look fat?", and..}
   end
 
   def test_asking_a_numeric_question
-    skip
+    # skip
     remark = "You are, what, like 15?"
     assert_equal "Sure.", Bob.hey(remark), %q{Bob hears "You are, what, like 15?", and..}
   end
 
   def test_asking_gibberish
-    skip
+    # skip
     remark = "fffbbcbeab?"
     assert_equal "Sure.", Bob.hey(remark), %q{Bob hears "fffbbcbeab?", and..}
   end
 
   def test_talking_forcefully
-    skip
+    # skip
     remark = "Let's go make out behind the gym!"
     assert_equal "Whatever.", Bob.hey(remark), %q{Bob hears "Let's go make out behind the gym!", and..}
   end
 
   def test_using_acronyms_in_regular_speech
-    skip
+    # skip
     remark = "It's OK if you don't want to go to the DMV."
     assert_equal "Whatever.", Bob.hey(remark), %q{Bob hears "It's OK if you don't want to go to the DMV.", and..}
   end
 
   def test_forceful_question
-    skip
+    # skip
     remark = "WHAT THE HELL WERE YOU THINKING?"
     assert_equal "Calm down, I know what I'm doing!", Bob.hey(remark), %q{Bob hears "WHAT THE HELL WERE YOU THINKING?", and..}
   end
 
   def test_shouting_numbers
-    skip
+    # skip
     remark = "1, 2, 3 GO!"
     assert_equal "Whoa, chill out!", Bob.hey(remark), %q{Bob hears "1, 2, 3 GO!", and..}
   end
 
   def test_only_numbers
-    skip
+    # skip
     remark = "1, 2, 3"
     assert_equal "Whatever.", Bob.hey(remark), %q{Bob hears "1, 2, 3", and..}
   end
 
   def test_question_with_only_numbers
-    skip
+    # skip
     remark = "4?"
     assert_equal "Sure.", Bob.hey(remark), %q{Bob hears "4?", and..}
   end
 
   def test_shouting_with_special_characters
-    skip
+    #skip
     remark = "ZOMG THE %^*@\#$(*^ ZOMBIES ARE COMING!!11!!1!"
     assert_equal "Whoa, chill out!", Bob.hey(remark), %q{Bob hears "ZOMG THE %^*@\#$(*^ ZOMBIES ARE COMING!!11!!1!", and..}
   end
 
   def test_shouting_with_no_exclamation_mark
-    skip
+    #skip
     remark = "I HATE YOU"
     assert_equal "Whoa, chill out!", Bob.hey(remark), %q{Bob hears "I HATE YOU", and..}
   end
 
   def test_statement_containing_question_mark
-    skip
+    #skip
     remark = "Ending with ? means a question."
     assert_equal "Whatever.", Bob.hey(remark), %q{Bob hears "Ending with ? means a question.", and..}
   end
 
   def test_non_letters_with_question
-    skip
+    #skip
     remark = ":) ?"
     assert_equal "Sure.", Bob.hey(remark), %q{Bob hears ":) ?", and..}
   end
